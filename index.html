@@ -15,7 +15,11 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) Novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-                <form action="login.js" method="post"></form>
+                <form action="login.js" method="post" autocomplete="on">
+                    <label for="iuser">Usuário: <input type="text" name="user" id="iuser" placeholder="Digite seu Usuário" required></label>
+                    <label for="ipassword">Senha: <input type="password" name="password" id="ipassword" placeholder="Digite sua senha" required></label>
+                    <input type="submit" value="Entrar">
+                </form>
             </div>
         </section>
     </main>

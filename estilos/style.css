@@ -8,6 +8,44 @@ Cinza Escuro: #3B424F
 Azul Escuro: #1C2433 
 */
 
-body {
-    background-color: lightblue;
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #2F5CB8;
+    height: 100vh;
+    width: 100vw;
+}
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background-color: #acb6ca;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
+}
+section#login > div#imagem {
+    display: block;
+    background: #2F5CB8 url(../imagens/imagem-predio.jpg) no-repeat;
+    height: 200px;
+    background-size: cover;
+    background-position: right bottom;
+
+}
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
 }
